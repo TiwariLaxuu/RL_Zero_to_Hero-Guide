@@ -1,104 +1,103 @@
+# 🤖 Reinforcement Learning Zero to Hero Guide
 
-# 👾 Reinforcement Learning (RL) Zero to Hero Guide  
-This repository serves as a comprehensive guide to learning **Reinforcement Learning (RL)** from **basics to advanced**.  
+Welcome to the **Reinforcement Learning (RL) Zero to Hero Guide**! This repository serves as a comprehensive resource to learn RL from basics to advanced concepts.
 
-🔗 **Follow us on**: [https://www.linkedin.com/in/laxmi-tiwari/](#)  
+## 📌 Quick Links
 
----
+- 🏗 **RL Basics Course** - [Start Here](#rl-basics-course)
+- ⚒ **RL Toolkit** - [Explore RL Libraries](#rl-toolkit)
+- 📚 **RL Research Papers** - [Latest RL Survey Papers](#rl-survey-papers)
 
-## 🚀 Quick Links  
+## 🏗 RL Basics Course
 
-📖 **[RL Basics Course](#rl-basics-course)** | 🛠 **[RL Toolkit](#rl-toolkit)** | 📜 **[RL Survey Papers](#rl-survey-papers)**  
-
----
-
-## 📖 RL Basics Course  
-
-| **Topic**                  | **Description**                                                       | **Link** |
-|----------------------------|-----------------------------------------------------------------------|---------|
-| What is RL?                | Explain RL with a simple example.                                    | [Link](#) |
-| Why RL?                    | Discuss the importance of RL and its applications.                   | [Link](#) |
-| RL Framework               | Breakdown of RL concepts: **Agent, Environment, State, Action, Reward**. | [Link](#) |
-| Markov Decision Process (MDP) | Explain MDPs and their role in RL.                                 | [Link](#) |
-| Exploration vs. Exploitation | Discuss the trade-off and strategies like **ε-greedy, UCB, Thompson Sampling**. | [Link](#) |
-| RL Algorithms Overview      | High-level comparison of **Model-Free, Model-Based, Value-Based, Policy-Based RL**. | [Link](#) |
-| RL Roadmap                 | Detailed roadmap to learn RL from basics to advanced.               | [Link](#) |
-| RL from Scratch            | Implementing RL from scratch using Python & NumPy.                  | [Link](#) |
-| RL with Gymnasium (Gym)    | RL implementation using OpenAI's Gymnasium environments.            | [Link](#) |
-| RL with Stable Baselines3  | RL implementation using the **Stable-Baselines3** framework.       | [Link](#) |
-| RL for Trading             | RL implementation for **algorithmic trading strategies**.          | [Link](#) |
+| Topic | Description | Link |
+|--------|------------|------|
+| **What is RL?** | Introduction to Reinforcement Learning with examples. | [Read More](#) |
+| **Why RL?** | Discusses the importance and applications of RL. | [Read More](#) |
+| **How RL Works?** | Explains key RL concepts - Policy, Value Function, Q-learning, etc. | [Read More](#) |
+| **Exploration vs Exploitation** | Understanding the trade-off in RL. | [Read More](#) |
+| **Markov Decision Process (MDP)** | Explanation of MDPs and their role in RL. | [Read More](#) |
+| **RL Roadmap** | Step-by-step roadmap to mastering RL. | [Read More](#) |
+| **RL Developer's Stack** | Covers libraries and tools used in RL development. | [Read More](#) |
+| **RL from Scratch** | RL implementation without frameworks. | [Read More](#) |
+| **RL with Stable Baselines3** | RL using Stable Baselines3. | [Read More](#) |
+| **RL for Finance** | Reinforcement Learning applications in finance. | [Read More](#) |
+| **Multi-Agent RL (MARL)** | Learn MARL techniques and implementations. | [Read More](#) |
 
 ---
 
-## 🛠 RL Toolkit  
+## ⚒ RL Toolkit
 
-### 🔴 **RL Frameworks**  
+### 🔴 RL Frameworks
 
-| **Library**        | **Description**                                                   | **Link** |
-|--------------------|-------------------------------------------------------------------|---------|
-| Gymnasium (Gym)   | Standardized RL environment for developing and testing agents.   | [Link](#) |
-| Stable-Baselines3 | A popular RL library with pre-implemented RL algorithms.         | [Link](#) |
-| RLlib             | Scalable RL framework for production-level applications.         | [Link](#) |
-| SBX              | An advanced fork of **Stable-Baselines3** with more features.     | [Link](#) |
+| Library | Description | Link |
+|---------|------------|------|
+| **Stable-Baselines3** | Reliable RL library for PyTorch. | [GitHub](https://github.com/DLR-RM/stable-baselines3) |
+| **RLlib** | Scalable reinforcement learning library. | [GitHub](https://github.com/ray-project/ray) |
+| **Tianshou** | RL framework built on PyTorch. | [GitHub](https://github.com/thu-ml/tianshou) |
+| **PettingZoo** | MARL framework for environments. | [GitHub](https://github.com/Farama-Foundation/PettingZoo) |
+| **Mujoco** | Physics engine for RL simulation. | [Website](https://mujoco.org/) |
 
-### 🟠 **RL Algorithms**  
+### 🟠 Environments
 
-| **Algorithm**          | **Description**                                                 | **Link** |
-|------------------------|---------------------------------------------------------------|---------|
-| DQN (Deep Q-Network)   | Value-based RL algorithm using deep learning.                 | [Link](#) |
-| PPO (Proximal Policy Optimization) | A popular **policy-based** RL algorithm.           | [Link](#) |
-| A2C (Advantage Actor-Critic) | Actor-Critic RL algorithm with synchronous updates.   | [Link](#) |
-| SAC (Soft Actor-Critic) | **Off-policy RL** with entropy regularization.               | [Link](#) |
-| TD3 (Twin Delayed DDPG) | **Improved DDPG** with noise reduction.                      | [Link](#) |
+| Library | Description | Link |
+|---------|------------|------|
+| **OpenAI Gym** | Classic RL environments. | [GitHub](https://github.com/openai/gym) |
+| **Gymnasium** | Improved version of OpenAI Gym. | [GitHub](https://github.com/Farama-Foundation/Gymnasium) |
+| **DeepMind Control Suite** | RL environments for control tasks. | [GitHub](https://github.com/deepmind/dm_control) |
+| **Procgen** | Procedurally generated environments for RL. | [GitHub](https://github.com/openai/procgen) |
 
-### 🟡 **Simulation Environments**  
+### 🟡 Exploration Strategies
 
-| **Library**      | **Description**                                        | **Link** |
-|------------------|--------------------------------------------------------|---------|
-| Gymnasium (Gym) | Standardized RL environment for various applications.  | [Link](#) |
-| MuJoCo         | High-performance physics simulation for robotics.       | [Link](#) |
-| CARLA          | Autonomous driving simulation for RL research.          | [Link](#) |
-| PettingZoo     | Multi-agent RL environments for research and testing.   | [Link](#) |
+| Library | Description | Link |
+|---------|------------|------|
+| **Curiosity-Driven RL** | Exploration methods like Intrinsic Motivation. | [GitHub](#) |
+| **Episodic Curiosity** | Exploration with episodic memory. | [GitHub](#) |
 
-### 🟢 **RL for Finance**  
+### 🟢 Model-Free RL Algorithms
 
-| **Library**           | **Description**                                    | **Link** |
-|-----------------------|----------------------------------------------------|---------|
-| FinRL                | RL library tailored for **algorithmic trading**.  | [Link](#) |
-| Gym-AnyTrading       | Custom RL environments for **financial markets**.  | [Link](#) |
-| TensorTrade          | RL framework for designing trading strategies.     | [Link](#) |
+| Algorithm | Description | Link |
+|-----------|------------|------|
+| **DQN** | Deep Q-Networks for discrete action spaces. | [GitHub](#) |
+| **PPO** | Proximal Policy Optimization for continuous action spaces. | [GitHub](#) |
+| **SAC** | Soft Actor-Critic for off-policy learning. | [GitHub](#) |
 
-### 🔵 **Exploration Strategies**  
+### 🔵 Model-Based RL Algorithms
 
-| **Method**              | **Description**                                      | **Link** |
-|-------------------------|------------------------------------------------------|---------|
-| Epsilon-Greedy         | Random exploration with decreasing randomness.      | [Link](#) |
-| Upper Confidence Bound (UCB) | Balances exploration and exploitation dynamically. | [Link](#) |
-| Thompson Sampling      | Bayesian-based exploration method.                   | [Link](#) |
+| Algorithm | Description | Link |
+|-----------|------------|------|
+| **MBPO** | Model-Based Policy Optimization. | [GitHub](#) |
+| **Dreamer** | Latent model-based RL. | [GitHub](#) |
 
-### 🟣 **Evaluation & Metrics**  
+### 🟣 Multi-Agent RL (MARL)
 
-| **Library**    | **Description**                                          | **Link** |
-|---------------|----------------------------------------------------------|---------|
-| RLlib Metrics | Built-in evaluation tools in RLlib.                     | [Link](#) |
-| SB3 Monitor   | Episode monitoring for **Stable-Baselines3** models.     | [Link](#) |
-| TensorBoard   | Visualization of RL model training and performance.      | [Link](#) |
+| Library | Description | Link |
+|---------|------------|------|
+| **PyMARL** | Multi-agent RL framework. | [GitHub](https://github.com/oxwhirl/pymarl) |
+| **MALib** | Scalable MARL framework. | [GitHub](https://github.com/sunblaze-ucb/MALib) |
 
----
+### 🟤 RL Evaluation
 
-## 📜 RL Survey Papers  
-
-| **Paper**                                                      | **Category**           | **Link** |
-|----------------------------------------------------------------|------------------------|---------|
-| Reinforcement Learning: An Introduction (Sutton & Barto)       | RL Fundamentals        | [Link](#) |
-| A Comprehensive Survey of Deep RL                              | Deep RL               | [Link](#) |
-| Multi-Agent RL: A Review                                       | Multi-Agent RL        | [Link](#) |
-| RL for Finance: Challenges and Opportunities                   | RL in Finance         | [Link](#) |
-| Safe Reinforcement Learning: A Survey                          | Safe RL               | [Link](#) |
-| Offline Reinforcement Learning: A Comprehensive Survey        | Offline RL            | [Link](#) |
-| RL for Robotics: A Review                                      | RL in Robotics        | [Link](#) |
-| Evaluation Metrics for RL: A Survey                            | RL Evaluation         | [Link](#) |
+| Library | Description | Link |
+|---------|------------|------|
+| **RL-Zoo** | RL baselines for benchmarking. | [GitHub](https://github.com/DLR-RM/rl-baselines3-zoo) |
+| **RLGraph** | Modular RL graph-based library. | [GitHub](https://github.com/rlgraph/rlgraph) |
 
 ---
 
-This **Reinforcement Learning Zero to Hero Guide** will be continuously updated with new resources. 🚀  
+## 📚 RL Survey Papers
+
+| Paper | Category | Link |
+|-------|----------|------|
+| **A Survey on Reinforcement Learning** | General | [Link](#) |
+| **Deep RL: A Survey** | Deep RL | [Link](#) |
+| **Multi-Agent RL: A Review** | MARL | [Link](#) |
+| **Reinforcement Learning in Finance** | Finance | [Link](#) |
+| **Safe RL: Challenges and Approaches** | Safe RL | [Link](#) |
+| **RL for Robotics: A Survey** | Robotics | [Link](#) |
+
+---
+
+## 💡 Contributing
+
+If you have suggestions, feel free to open an issue or submit a pull request. Let's make this the best RL resource together! 🚀
